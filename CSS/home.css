@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    color: black;
+}
+
+#header{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 20px 10%;
+
+}
+
+.header-text{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spreads out the text and the image */
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 30px; /* corrected the missing 'px' */
+    
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: -15%;
+    
+}
+.header-text h1 span{
+    color:#32de84;
+    font-family: monospace;
+}
+
+.santi-pic{
+    flex-shrink: 0;
+    max-width: 400px;
+}
+
+
+/*---------subtitle-----------*/
+.subtitle{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spreads out the text and the image */
+    margin-top: -21%;
+    margin-left: 14%;
+    font-size: 20px; /* corrected the missing 'px' */
+    font-style: italic;
+    font-weight: bold;
+    font-family: monospace;
+    color: #708090;
+}
+
+
+
+
+/*---------directory-----------*/
+.icons nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 7%;
+    margin-top:5%;
+    flex-wrap: wrap;
+    margin-left: -1%;
+}
+.icons nav ul li {
+    text-align: center; 
+    margin-right: 70px;
+}
+.icons i {
+    font-size: 37px; /* Adjust the size as needed */
+    color: #32de84; /* Change the color as needed */
+}
+
+
+.icon-container {
+    display: flex; /* Align items in a row */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally within the container */
+    justify-content: center; /* Center-align items vertically within the container */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    position: relative; /* Ensure positioning context for pseudo-element */
+}
+
+.icon-container a {
+    display: block; /* Make the link a block to contain the icon and text */
+    text-decoration: none;
+    color: black;
+    text-align: center; /* Center text */
+    padding: 5px; /* Add padding for better click area and spacing */
+}
+
+.icon-container a span {
+    display: block; /* Ensure the text is on its own line */
+    position: relative; /* Positioning context for the underline */
+    font-family: monospace;
+}
+
+.icon-container a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #32de84; /* Green background for the line */
+    position: absolute;
+    left: 0; /* Start from the left edge of the text span */
+    right: 0; /* Stretch to the right edge of the text span */
+    bottom: -10px; /* Position below the text */
+    margin: auto; /* Center the line horizontally */
+    transition: width 0.5s ease;
+}
+
+.icon-container a:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+.icon-container:hover {
+    transform: scale(1.5); /* Increase the size of the icon by 50% when hovered */
+}
+
+.icons nav ul li span {
+    display: block; /* Ensure the text is on a new line below the icon */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /* Adds space between the icon and the text */
+}
+
+.resume-class{
+    margin-top: 10px;
+}

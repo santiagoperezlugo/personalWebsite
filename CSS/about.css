@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: white;
+}
+
+.hover-border-effect {
+    position: relative;
+    overflow: hidden;
+    transition: transform 2s ease;
+}
+
+.hover-border-effect::before {
+    content: '';
+    position: absolute;
+    top: -20; /*change this to 0 for real box*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    transition: border-color 2s ease;
+}
+
+.hover-border-effect:hover::before {
+    border-color: #6050DC;
+}
+
+.hover-border-effect:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+.hover-border-effect:hover {
+    transform: scale(1.1); /* Increase the size of the icon by 50% when hovered */
+}
+
+.header {
+    margin-top: 20%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    flex: 1;
+    
+    font-size: 20px;
+}
+
+.header-text h1 {
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 5px;
+    font-size: 45px;
+    color: #6050DC;
+    margin-top: -35%;
+    margin-left: 48%;
+    text-align: center;
+    font-family: monospace;
+}
+
+.header-image {
+    flex-shrink: 0;
+    padding-left: 20px;
+}
+
+.santi-pic {
+    max-width: 300px;
+    height: auto;
+}
+
+.subtitle {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contains-profile, .contains-skills {
+    flex: 1;
+    margin: 10px;
+    margin-top: 4%;
+    color: #6050DC;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.profile-title, .skills-title {
+    border-style: solid;
+    max-width: 300px;
+    border-radius: 25px;
+    border-width: 5px;
+    font-size: 38px;
+    color: #6050DC;
+    font-weight: bold;
+    margin-top: -5%;
+    margin-left: 23%;
+    margin-bottom: 3%;
+    font-family: monospace;
+}
+
+.profile-text, .skills-text {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.profile-text span{
+    font-weight: normal;
+}
+
+.skills-text{
+    font-family: monospace;
+    
+}

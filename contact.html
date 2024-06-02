@@ -1,0 +1,61 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="contact-header">
+        <h1>CONTACT ME</h1>
+        <h2>@</h2>
+    </div>
+
+    <ul class="contacts">
+        <li>
+            <div class="discord-container hover-border-effect">
+                <button onclick="copyDiscordID()" class="discord-copy">
+                    <h1><i class="fab fa-discord"></i></h1>
+                    <h2>Discord</h2>
+                </button>
+                <p id="copyAlert" style="visibility: hidden; color: green;">Username Copied Successfully!</p>
+            </div>
+            
+        </li>
+        <li>
+            <div class="linkedin-container hover-border-effect">
+                <a href="https://www.linkedin.com/in/santiago-perezlugo">
+                    <h1><i class="fab fa-linkedin"></i></h1>
+                    <h2>LinkedIn</h2>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="email-container hover-border-effect">
+                <a href="mailto:perezlugosantiago@gmail.com">
+                    <h1><i class="fas fa-envelope-open-text"></i></h1>
+                    <h2>Email</h2>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        function copyDiscordID() {
+            const el = document.createElement('textarea');
+            el.value = "sant.pl";
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const alertMessage = document.getElementById('copyAlert');
+            alertMessage.style.visibility = 'visible';
+
+            setTimeout(function() {
+                alertMessage.style.visibility = 'hidden';
+            }, 2000);
+        }
+    </script>
+</body>
