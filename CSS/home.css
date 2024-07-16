@@ -1,140 +1,146 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: white;
     color: black;
 }
 
-#header{
+#header {
     width: 100%;
     height: 90vh;
     background-size: cover;
     background-position: center;
 }
 
-.container{
+.container {
     padding: 20px 10%;
-
 }
 
-.header-text{
+.header-text {
     display: flex;
-    align-items: center; /* Centers items vertically */
-    justify-content: space-between; /* Spreads out the text and the image */
+    align-items: center;
+    justify-content: space-between;
     margin-top: 10%;
-    margin-bottom: 0;
-    font-size: 30px; /* corrected the missing 'px' */
-    
+    font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 50px;
     margin-top: -15%;
-    
 }
-.header-text h1 span{
-    color:#32de84;
+
+.header-text h1 span {
+    color: #32de84;
     font-family: monospace;
 }
 
-.santi-pic{
+.santi-pic {
     flex-shrink: 0;
     max-width: 400px;
 }
 
-
-/*---------subtitle-----------*/
-.subtitle{
+.subtitle {
     display: flex;
-    align-items: center; /* Centers items vertically */
-    justify-content: space-between; /* Spreads out the text and the image */
-    margin-top: -21%;
-    margin-left: 14%;
-    font-size: 20px; /* corrected the missing 'px' */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24vh;
+    margin-top: -30vh;
+    font-size: 2.5vh;
     font-style: italic;
-    font-weight: bold;
-    font-family: monospace;
     color: #708090;
 }
 
 
+.social-media {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vh;
+    width: 80vh;
+    margin-top: -45vh;
+    margin-left: 23vh;
+}
 
-
-/*---------directory-----------*/
-.icons nav ul{
+.social-media a {
     display: flex;
     align-items: center;
-    list-style: none;
-    margin-left: 7%;
-    margin-top:5%;
-    flex-wrap: wrap;
-    margin-left: -1%;
-}
-.icons nav ul li {
-    text-align: center; 
-    margin-right: 70px;
-}
-.icons i {
-    font-size: 37px; /* Adjust the size as needed */
-    color: #32de84; /* Change the color as needed */
+    justify-content: center; 
+    margin: 0 2vh;
 }
 
-
-.icon-container {
-    display: flex; /* Align items in a row */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items horizontally within the container */
-    justify-content: center; /* Center-align items vertically within the container */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
-    position: relative; /* Ensure positioning context for pseudo-element */
+.social-media a i { /* Icon style */
+    color: white;
+    padding: 2vh 2vh; 
+    border-radius: 50%;
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s; /* Smooth transition */
 }
 
-.icon-container a {
-    display: block; /* Make the link a block to contain the icon and text */
-    text-decoration: none;
+.social-media a i:hover {
+    transform: scale(1.1);
+}
+
+.github-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.8); /* Dark gray glow for GitHub */
+}
+
+.linkedin-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(0, 119, 181, 0.8); /* LinkedIn blue glow */
+}
+
+.about-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(50, 222, 132, 0.8); /* Green glow for About */
+}
+
+.projects-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(204, 0, 0, 0.8); /* Dark red glow for Projects */
+}
+
+.contact-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(112, 128, 144, 0.8); /* Slate gray glow for Contact */
+}
+.resume-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(125, 177, 230, 0.8); /* Slate gray glow for Contact */
+}
+
+.social-media a h2 {
+    margin: 5px 0 0 0; /* Space between icon and text */
+    font-size: 1.5vh;
     color: black;
-    text-align: center; /* Center text */
-    padding: 5px; /* Add padding for better click area and spacing */
+    font-family: 'Nunito', sans-serif; /* Font family */
 }
 
-.icon-container a span {
-    display: block; /* Ensure the text is on its own line */
-    position: relative; /* Positioning context for the underline */
-    font-family: monospace;
+.github-class i {
+    background-color: #333; /* Dark gray for GitHub */
 }
 
-.icon-container a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background: #32de84; /* Green background for the line */
-    position: absolute;
-    left: 0; /* Start from the left edge of the text span */
-    right: 0; /* Stretch to the right edge of the text span */
-    bottom: -10px; /* Position below the text */
-    margin: auto; /* Center the line horizontally */
-    transition: width 0.5s ease;
+.linkedin-class i {
+    background-color: #0077b5; /* LinkedIn blue */
 }
 
-.icon-container a:hover::after {
-    width: 100%; /* Expand to full width on hover */
+.about-class i {
+    background-color: #32de84; /* Green for About */
+}
+.projects-class i {
+    background-color: #c00; /* Dark red for Projects */
+}
+.contact-class i {
+    background-color: #708090; /* Dark gray for Contact */
+}
+.resume-class i {
+    background-color: #8bc3fc; /* Dark gray for Contact */
 }
 
-.icon-container:hover {
-    transform: scale(1.5); /* Increase the size of the icon by 50% when hovered */
-}
-
-.icons nav ul li span {
-    display: block; /* Ensure the text is on a new line below the icon */
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px; /* Adds space between the icon and the text */
-}
-
-.resume-class{
-    margin-top: 10px;
+.hover-border-effect a {
+    display: inline-block; 
+    color: inherit; 
+    text-decoration: none; /* No underline */
 }

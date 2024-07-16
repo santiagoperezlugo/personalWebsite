@@ -2,10 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santiago Perez Lugo Portfolio</title>
-    <link rel="stylesheet" href = "CSSprojects.css">
+    <title>Project Cards</title>
+    <link rel="stylesheet" href="CSS/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+<body>
+    <div class="header">
+        <h1>Personal Projects</h1>
+    </div>
+    <div class="social-media">
+        <div class="home-class hover-border-effect">
+            <a href="index.html">
+                <h1><i class="fas fa-home"></i></h1>
+                <h2>Home</h2>
+            </a>
+        </div>
+        <div class="github-class hover-border-effect">
+            <a href="https://github.com/santiagoperezlugo">
+                <h1><i class="fab fa-github"></i></h1>
+                <h2>Github</h2>
+            </a>
+        </div>
+        <div class="resume-class hover-border-effect">
+            <a href="Documents/splResume.pdf" download="Santiago_Perez_Lugo_Resume.pdf">
+                <h1><i class="fa fa-file"></i></h1>
+                <h2>Resume</h2>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="card-container">
+        <div class="card">
+            <h3>VIDEO GAME RECOMMENDATION ENGINE BUILT WITH PYTORCH</h3>
+            <img src="images/in-progress.png" alt="UniTalk Image" class="card-image" id = "arcadeAI"> <!-- Placeholder for image -->
+            <h1>ArcadeAI</h1>
+            <p> ArcadeAI learns from individual gaming preferences and gameplay history to suggest personalized game titles that players will love.</p>
+            <div class="tech-stack">
+                <span>PyTorch</span>
+                <span>React</span>
+                <span>MongoDBL</span>
+                <span>Flask</span>
+            </div>
+            <a href="https://github.com/santiagoperezlugo/ArcadeAI?tab=readme-ov-file">Learn More ></a>
+        </div>
+        <div class="card">
+            <h3>PREDICTIVE ANALYTICS MACHINE MODEL BUILT WITH PYTORCH</h3>
+            <img src="images/Ti-Hoops.png" alt="UniTalk Image" class="card-image" id = ti-image> <!-- Placeholder for image -->
+            <h1>Ti's Hooping Simulator</h1>
+            <p>Get a machine model trained on 47 years of nba data to predict your custom made nba games!</p>
+            <div class="tech-stack">
+                <span>PyTorch</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>Express</span>
+            </div>
+            <a href="http://tiiii-env.eba-fjkw3ift.us-east-2.elasticbeanstalk.com/">Learn More ></a>
+        </div>
+        <div class="card">
+            <h3>RANDOM TEAM GENERATOR MOBILE APPLICATION</h3>
+            <img src="images/BracketBuddy.png" alt="BracketBuddy" class="card-image" id = bracket_image> <!-- Placeholder for image -->
+            <h1>BracketBuddy</h1>
+            <p>Quick and easy bracket generator app, supporting custom or random teams!</p>
+            <div class="tech-stack">
+                <span>Swift</span>
+                <span>MySQL</span>
+            </div>
+            <a href="https://github.com/santiagoperezlugo/BracketBuddy">Learn More ></a>
+        </div>
+    </div>
+</body>
+</html>

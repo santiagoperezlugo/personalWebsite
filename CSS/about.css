@@ -44,17 +44,17 @@ body {
 }
 
 .header {
-    margin-top: 20%;
-    color: black;
+    margin-top: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
+    max-height: 25vh;
+    max-width: 100vh;
 }
 
 .header-text {
     flex: 1;
-    
     font-size: 20px;
 }
 
@@ -76,7 +76,8 @@ body {
 }
 
 .santi-pic {
-    max-width: 300px;
+    margin-top: -10vh;
+    max-width: 28vh;
     height: auto;
 }
 

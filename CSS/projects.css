@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    text-align: center;
+    margin-top: 7vh;
+    font-size: 3vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.social-media {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers the icons */
+    font-size: 1.35vh;
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+}
+
+.social-media a {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 0 1vh; /* Space between circles */
+}
+
+.social-media a i { /* Icon style */
+    color: white;
+    padding: 1.7vh; 
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s; /* Smooth transition */
+}
+
+.social-media a i:hover{
+    transform: scale(1.1); 
+}
+
+.social-media a h2 {
+    margin: 5px 0 0 0; /* Space between icon and text */
+    font-size: 1.2vh;
+    margin-top: -1.2vh;
+    color: black;
+    font-family: 'Nunito', sans-serif; /* Font family */
+}
+
+
+.home-class i{
+    background-color: #32de84;
+
+}
+
+.github-class i {
+    background-color: #333; /* Dark gray for GitHub */
+}
+
+.resume-class i {
+    background-color: #8bc3fc; /* Dark red for Resume */
+}
+
+
+.hover-border-effect a {
+    display: inline-block; 
+    color: inherit; 
+    text-decoration: none; /* No underline */
+}
+
+.hover-border-effect:hover {
+    background-color: #f0f0f0; /* Adds a hover background color */
+    border-radius: 5px; /* Optional: Rounds corners on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 2vh;
+    width: 80%;
+    max-width: 40%;
+    margin: 2vh 0;
+    padding: 2vh;
+    text-align: center;
+    transition: transform 0.7s, box-shadow 0.7s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+    transition: transform 0.7s ease-out; /* Ease-out makes the scale-down smoother */
+}
+
+
+.card-image {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #666;
+    font-size: 14px;
+}
+
+.card h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.tech-stack {
+    margin: 10px 0;
+}
+
+.tech-stack span {
+    display: inline-block;
+    background: #e1ecf4;
+    color: #007bff;
+    border-radius: 16px;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 14px;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+#bracket_image{
+    max-width: 22%;
+    max-height: 10%;
+}
+#arcadeAI {
+    max-width: 40%; 
+    max-height: 40%;
+}
+#ti-image{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.github-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.8); /* Dark gray glow for GitHub */
+}
+
+.home-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(50, 222, 132, 0.8); /* Green glow for About */
+}
+.resume-class i:hover {
+    box-shadow: 0 0 30px 10px rgba(125, 177, 230, 0.8); /* Slate gray glow for Contact */
+}
