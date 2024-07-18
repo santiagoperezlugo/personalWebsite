@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* This makes sure that the body takes the full viewport height */
+    height: 100vh; 
 }
 
 .contact-header {
@@ -33,17 +33,17 @@ body {
 
 .contacts {
     display: flex;
-    justify-content: center; /* Align items in the center */
+    justify-content: center;
     list-style: none;
     align-items: center;
     width: 100%;
-    padding: 0 10%; /* Add padding to left and right to reduce item stretch */
+    padding: 0 10%;
 }
 
 
 .discord-container button{
-    text-align: center; /* Center the text inside the button */
-    padding: 5px; /* Consistent padding */
+    text-align: center;
+    padding: 5px; 
     border: none;
     background: none;
     margin-top: 20px;
@@ -57,7 +57,7 @@ body {
     color: #7289da;
 }
 .discord-copy h2 {
-    position: relative; /* Positioning context for the underline */
+    position: relative; 
     color: black;
 }
 
@@ -74,7 +74,7 @@ body {
 .email-container a {
     text-decoration: none;
     color: #cc0000;
-    text-align: center; /* Center text */
+    text-align: center; 
     margin-left: 230px;
 }
 

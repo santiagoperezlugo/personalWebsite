@@ -73,7 +73,7 @@ body {
     margin: 0 2vh;
 }
 
-.social-media a i { /* Icon style */
+.social-media a i { 
     color: white;
     padding: 2vh 2vh; 
     border-radius: 50%;
@@ -81,7 +81,7 @@ body {
     height: 100%; 
     align-items: center;
     justify-content: center;
-    transition: ease-in-out 0.3s; /* Smooth transition */
+    transition: ease-in-out 0.3s;
 }
 
 .social-media a i:hover {
@@ -89,58 +89,58 @@ body {
 }
 
 .github-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.8); /* Dark gray glow for GitHub */
+    box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.8); 
 }
 
 .linkedin-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(0, 119, 181, 0.8); /* LinkedIn blue glow */
+    box-shadow: 0 0 30px 10px rgba(0, 119, 181, 0.8); 
 }
 
 .about-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(50, 222, 132, 0.8); /* Green glow for About */
+    box-shadow: 0 0 30px 10px rgba(50, 222, 132, 0.8); 
 }
 
 .projects-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(204, 0, 0, 0.8); /* Dark red glow for Projects */
+    box-shadow: 0 0 30px 10px rgba(204, 0, 0, 0.8);
 }
 
 .contact-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(112, 128, 144, 0.8); /* Slate gray glow for Contact */
+    box-shadow: 0 0 30px 10px rgba(112, 128, 144, 0.8); 
 }
 .resume-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(125, 177, 230, 0.8); /* Slate gray glow for Contact */
+    box-shadow: 0 0 30px 10px rgba(125, 177, 230, 0.8);
 }
 
 .social-media a h2 {
-    margin: 5px 0 0 0; /* Space between icon and text */
+    margin: 5px 0 0 0;
     font-size: 1.5vh;
     color: black;
-    font-family: 'Nunito', sans-serif; /* Font family */
+    font-family: 'Nunito', sans-serif; 
 }
 
 .github-class i {
-    background-color: #333; /* Dark gray for GitHub */
+    background-color: #333; 
 }
 
 .linkedin-class i {
-    background-color: #0077b5; /* LinkedIn blue */
+    background-color: #0077b5; 
 }
 
 .about-class i {
-    background-color: #32de84; /* Green for About */
+    background-color: #32de84;
 }
 .projects-class i {
-    background-color: #c00; /* Dark red for Projects */
+    background-color: #c00; 
 }
 .contact-class i {
-    background-color: #708090; /* Dark gray for Contact */
+    background-color: #708090;
 }
 .resume-class i {
-    background-color: #8bc3fc; /* Dark gray for Contact */
+    background-color: #8bc3fc; 
 }
 
 .hover-border-effect a {
     display: inline-block; 
     color: inherit; 
-    text-decoration: none; /* No underline */
+    text-decoration: none; 
 }

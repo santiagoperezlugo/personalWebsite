@@ -23,7 +23,7 @@ body {
 .hover-border-effect::before {
     content: '';
     position: absolute;
-    top: -20; /*change this to 0 for real box*/
+    top: -20;
     left: 0;
     right: 0;
     bottom: 0;
@@ -37,10 +37,10 @@ body {
 }
 
 .hover-border-effect:hover::after {
-    width: 100%; /* Expand to full width on hover */
+    width: 100%; 
 }
 .hover-border-effect:hover {
-    transform: scale(1.1); /* Increase the size of the icon by 50% when hovered */
+    transform: scale(1.1);
 }
 
 .header {
