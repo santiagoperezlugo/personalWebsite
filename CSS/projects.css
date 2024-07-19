@@ -42,7 +42,7 @@ body {
 }
 
 .social-media a h2 {
-    margin: 5px 0 0 0; 
+    margin: 1vh 0 0 0; 
     font-size: 1.2vh;
     margin-top: -1.2vh;
     color: black;
@@ -72,7 +72,7 @@ body {
 
 .hover-border-effect:hover {
     background-color: #f0f0f0; 
-    border-radius: 5px; 
+    border-radius: 1vh; 
     transition: background-color 0.3s ease; 
 }
 
@@ -108,39 +108,39 @@ body {
 
 .card h3 {
     color: #666;
-    font-size: 14px;
+    font-size: 2.2vh;
 }
 
 .card h1 {
     color: #333;
-    font-size: 24px;
+    font-size: 3vh;
 }
 
 .card p {
     color: #666;
-    font-size: 16px;
+    font-size: 2vh;
     margin: 10px 0;
 }
 
 .tech-stack {
-    margin: 10px 0;
+    margin: 2vh 0;
 }
 
 .tech-stack span {
     display: inline-block;
     background: #e1ecf4;
     color: #007bff;
-    border-radius: 16px;
-    padding: 5px 10px;
+    border-radius: 2.2vh;
+    padding: 0.8vh 1.8vh;
     margin: 2px;
-    font-size: 14px;
+    font-size: 1.8vh;
 }
 
 .card a {
     color: #007bff;
     text-decoration: none;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1.8vh;
+    margin-top: 1.3vh;
     display: inline-block;
 }
 

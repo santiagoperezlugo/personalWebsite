@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    padding: 20px 10%;
+    padding: 2.3vh 10%;
 }
 
 .header-text {
@@ -26,11 +26,11 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 10%;
-    font-size: 30px;
+    margin-left: 4vh;
 }
 
 .header-text h1 {
-    font-size: 50px;
+    font-size: 3.1vw;
     margin-top: -15%;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .santi-pic {
     flex-shrink: 0;
-    max-width: 400px;
+    max-width: 48vh;
 }
 
 .subtitle {
@@ -63,7 +63,7 @@ body {
     font-size: 1.5vh;
     width: 80vh;
     margin-top: -45vh;
-    margin-left: 23vh;
+    margin-left: 25vh;
 }
 
 .social-media a {
