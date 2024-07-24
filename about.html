@@ -6,60 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Perez Lugo Portfolio</title>
     <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="contains-all hover-border-effect">
-        <div class="header">
-            <div class="header-text">
-                <h1>ABOUT ME</h1>
-                <div class="subtitle">
-                    Hi, I'm Santiago Perez Lugo, and I am a third year in the Engineering School at the University of Virginia. I am majoring in Computer Science along with a minor in Business.
-                    <br><br>
-                    I enjoy researching, working on personal projects, and solving technical problems. When I'm not coding, I love playing and watching sports like soccer, football, and basketball. I am looking for an opportunity to grow my skills and challenge myself.
+    <div class = home>
+                <a href="index.html">
+                    <h1><i class="fas fa-home"></i></h1>
+                    <h2>Home</h2>
+                </a>
+    </div>
+    <header>
+        <div class="header-content">
+            <div class="text-group">
+                <h1>Santiago Perez Lugo</h1>
+                <div class="centered-text">
+                    <p>University of Virginia - Class of 2026</p>
+                    <p>B.S. Computer Science | Minor in Business</p>
+                    <p>GPA: 3.84 | Major GPA: 3.96 &nbsp;
+                        <a href="Documents/Santiago Perez Lugo Transcript.pdf" download="Santiago_Perez_Lugo_Transcript.pdf">
+                        <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
-            <div class="header-image">
-                <img src="images/Santi-About.png" class="santi-pic" alt="Santiago's Photo">
-            </div>
+            <img src="images/Santi-About.png" alt="Santiago's Photo" class="profile-pic">
         </div>
-    </div>
-    <div class="flex-container">
-        <div class="contains-profile hover-border-effect">
-            <div class="profile-title">MY PROFILE</div>
-            <div class="profile-text">
-                <span>Currently, I am seeking a CS internship for Summer of 2025.
-                     If you think I'm a good fit, please contact me via perezlugosantiago@gmail.com </span>
-                <br><br>
-                Full Name: <span>Santiago Perez Lugo</span>
-                <br><br>
-                Email: <span>perezlugosantiago@gmail.com</span>
-                <br><br>
-                School: <span>University of Virginia</span>
-                <br><br>
-                Expected Graduation: <span>May 2026</span>
-                <br><br>
-                GPA: <span>3.84</span>
-            </div>
-        </div>
-        <div class="contains-skills hover-border-effect">
-            <div class="skills-title">MY SKILLS</div>
-            <div class="skills-text">
-                Python | Java | C
-                <br><br>
-                SQL (MySQL) | MongoDB
-                <br><br>
-                HTML | CSS | JavaScript
-                <br><br>
-                React | Flask
-                <br><br>
-                Node.js | Express
-                <br><br>
-                Swift/SwiftUI
-                <br><br>
-                Git | Linux (Ubuntu)
-            </div>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Santiago Perez Lugo, a third-year Engineering student at the University of Virginia, majoring in Computer Science with a minor in Business. I enjoy research, personal projects, and technical challenges. Outside of coding, my interests include soccer, football, and basketball. I am actively seeking a CS internship for Summer 2025 to further develop my skills.</p>
+        </section>
+        <div class="flex-container">
             
+            <section class="contact">
+                <h2>Contact</h2>
+                <div class="social-media">
+                    <div class="email-class hover-border-effect">
+                        <a href="mailto:perezlugosantiago@gmail.com">
+                            <h1><i class="far fa-paper-plane"></i></h1>
+                        </a>
+                    </div>
+                    <div class="linkedin-class hover-border-effect">
+                        <a href="https://www.linkedin.com/in/santiago-perezlugo">
+                            <h1><i class="fab fa-linkedin"></i></h1>
+                        </a>
+                    </div>
+                    <div class="github-class hover-border-effect">
+                        <a href="https://github.com/santiagoperezlugo">
+                            <h1><i class="fab fa-github"></i></h1>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            <section class="skills">
+                <h2>My Skills &nbsp; <a href="Documents/Santiago_Perez_Lugo_Resume.pdf" download="Santiago_Perez_Lugo_Resume.pdf">
+                    <i class="fa fa-file-pdf"></i></a>
+                </h2>
+                <ul>
+                    <li>Python | Java | C</li>
+                    <li>SQL (MySQL) | MongoDB</li>
+                    <li>JavaScript | HTML | CSS</li>
+                    <li>React | Flask</li>
+                    <li>Node.js | Express</li>
+                    <li>Swift/SwiftUI</li>
+                    <li>Git | Linux (Ubuntu)</li>
+                </ul>
+            </section>
         </div>
-    </div>
+    </main>
 </body>
 </html>

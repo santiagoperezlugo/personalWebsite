@@ -88,7 +88,7 @@ body {
     width: 80%;
     max-width: 40%;
     margin: 2vh 0;
-    padding: 2vh;
+    padding: 4vh;
     text-align: center;
     transition: transform 0.7s, box-shadow 0.7s;
 }
