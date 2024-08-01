@@ -37,7 +37,7 @@ body {
 .header-text h1 span {
     color: white;
     font-family: 'Raleway';
-    text-shadow: 0 0 10px rgba(8, 8, 8, 0.6), /* Subtle outer glow */
+    text-shadow: 0 0 10px rgba(8, 8, 8, 0.6),
                  0 0 20px rgba(13, 13, 13, 0.6);
 }
 
@@ -47,7 +47,7 @@ body {
     max-width: 20%;
     height: auto;
     margin-top: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2); 
     border-radius: 100%;
 }
 
@@ -208,7 +208,7 @@ body {
         padding: 10px;
     }
 }
-/* Media Queries for Tablets (iPads) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .header-text {
         margin-top: 40%;
