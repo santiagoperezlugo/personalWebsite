@@ -56,6 +56,7 @@ body {
 
 .subtitle {
     color: #484848;
+    position: relative;
     font-size: 2.5vh; 
     background: linear-gradient(90deg, rgb(28, 28, 28) 0%, rgba(113,121,126,1) 50%, rgba(0,0,0,1) 100%);
     -webkit-background-clip: text;
