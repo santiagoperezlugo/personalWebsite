@@ -1,296 +1,125 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
-body {
-    background: rgb(243, 243, 243);
-    color: black;
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f3f3f3;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #header {
-    width: 100%;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: center;
 }
 
-.container {
-    padding: 20px 10%;
-}
-
 .header-text {
-    display: flex;
-    align-items: center;
-    margin-top: 8%;
-    font-size: 30px;
-    flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .header-text h1 {
-    font-size: 50px;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
+    color: #1c1c1c;
 }
 
 .header-text h1 span {
-    color: white;
-    font-family: 'Raleway';
-    text-shadow: 0 0 10px rgba(8, 8, 8, 0.6),
-                 0 0 20px rgba(13, 13, 13, 0.6);
-    background: none; 
-    -webkit-text-fill-color: initial;
-
+    color: #fff;
+    text-shadow: 0 0 10px rgba(8,8,8,0.6), 0 0 20px rgba(13,13,13,0.6);
 }
 
+/* Increased profile image size */
 .santi-pic {
-    max-width: 20%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     margin-top: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2); 
-    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
 
+/* More space and slightly smaller text for subtitle */
 .subtitle {
-    color: #484848;
-    position: relative;
-    font-size: 2.5vh; 
-    background: linear-gradient(90deg, rgb(28, 28, 28) 0%, rgba(113,121,126,1) 50%, rgba(0,0,0,1) 100%);
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, #1c1c1c 0%, #71797e 50%, #000 100%);
     -webkit-background-clip: text;
-    text-align: center;
-    margin-top: 1.5%;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
     font-family: 'Raleway', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-    padding-top: 2vh;
 }
-
 
 .social-media {
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.5vh;
-    margin-top: -25vh;
-    gap: 1vh;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .social-media a {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    margin: 1vw;
+    text-decoration: none;
+    color: inherit;
+    gap: 6px;
 }
 
-.social-media a i {
-    color: white;
-    padding: 1vw;
-    border-radius: 50%;
+/* Uniform circle size and white icons */
+.social-media i {
     width: 60px;
     height: 60px;
+    font-size: 1.5rem;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: #333;
+    transition: transform 0.3s ease;
 }
 
-.social-media a i:hover {
+.social-media a.github-class i  { background-color: #333; }
+.social-media a.linkedin-class i { background-color: #0077b5; }
+.social-media a.about-class i    { background-color: #279aa2; }
+.social-media a.projects-class i { background-color: #9ed5ff; }
+.social-media a.contact-class i  { background-color: #708090; }
+.social-media a.resume-class i   { background-color: #74b8fb; }
+
+.social-media i:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-.github-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.8); 
-}
-
-.linkedin-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(0, 119, 181, 0.8); 
-}
-
-.about-class i:hover {
-    box-shadow: 0 0 30px 10px #279aa2;
-}
-
-.projects-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(158, 213, 255, 0.8);
-
-}
-
-.contact-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(112, 128, 144, 0.8); 
-}
-.resume-class i:hover {
-    box-shadow: 0 0 30px 10px rgba(151, 194, 237, 0.712);
-}
-
-.social-media a h2 {
-    margin: 5px 0 0 0;
-    font-size: 1.5vh;
-    color: black;
-    font-family: 'Nunito', sans-serif; 
-}
-
-.github-class i {
-    background-color: #333; 
-}
-
-.linkedin-class i {
-    background-color: #0077b5; 
-}
-
-.about-class i {
-    background-color: #279aa2;
-}
-.projects-class i {
-    background-color: #9ed5ff; 
-}
-.contact-class i {
-    background-color: #708090;
-}
-.resume-class i {
-    background-color: #74b8fb; 
-}
-
-.hover-border-effect a {
-    display: inline-block; 
-    color: inherit; 
-    text-decoration: none; 
-}
-
-
-/* mobile */
-@media (max-width: 768px) {
-    .header-text {
-        margin-top: 50%;
-    }
-    
-    .header-text h1 {
-        font-size: 2.8vh !important;
-    }
-    .santi-pic {
-        margin-top: 3vh;
-    }
-
-    .subtitle {
-        font-size: 1vh;
-        margin-top: 3vh !important;
-    }
-
-    .social-media {
-        font-size: 1.1vh;
-        margin-top: -44vh;
-    }
-
-    .social-media a {
-        margin: 30px;
-    }
-
-    .social-media a h2 {
-        margin: 5px 0 0 0;
-        font-size: 0.75vh;
-    }
+/* Smaller, centered text under icons */
+.social-media h2 {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 480px) {
-    .header-text {
-        font-size: 18px;
-    }
-    
-    .header-text h1 {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 1.5vh;
-        margin-top: 10px;
-    }
-
-    .social-media {
-        font-size: 1vh;
-    }
-
-    .social-media a i {
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header-text {
-        margin-top: 40%;
-    }
-    
-    .header-text h1 {
-        font-size: 4vh;
-        margin-top: 0;
-    }
-    .santi-pic {
-        margin-top: 3vh;
-    }
-
-    .subtitle {
-        font-size: 2vh;
-        margin-top: 3.5vh;
-    }
-
-    .social-media {
-        font-size: 1.5vh;
-        margin-top: -28vh;
-    }
-
-    .social-media a {
-        margin: 23px;
-    }
-    .social-media a i {
-        width: 40px;
-        height: 40px;
-        padding: 3vh;
-    }
-
-    .social-media a h2 {
-        margin: 5px 0 0 0;
-        font-size: 1.1vh;
-    }
-}
-
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-    .header-text {
-        margin-top: 1%;
-    }
-    
-    .header-text h1 {
-        font-size: 4vw;
-        margin-top: 0;
-    }
-    .santi-pic {
-        max-width: 15vw;
-        margin-top: 3vh;
-    }
-
-    .subtitle {
-        font-size: 1.8vw;
-        margin-top: 3.5vh;
-    }
-
-    .social-media {
-        font-size: 1vw;
-        margin-top: -12%;
-    }
-
-    .social-media a {
-        margin: 23px;
-    }
-    .social-media a i {
-        width: 40px;
-        height: 40px;
-        padding: 2vw;
-    }
-
-    .social-media a h2 {
-        margin: 5px 0 0 0;
-        font-size: 1vw;
-    }
+    .header-text h1 { font-size: 2rem; }
+    .subtitle { font-size: 1rem; margin-top: 20px; }
+    .santi-pic { width: 150px; height: 150px; }
+    .social-media i { width: 50px; height: 50px; font-size: 1.25rem; }
+    .social-media h2 { font-size: 0.7rem; }
 }
