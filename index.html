@@ -1,50 +1,116 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santiago Perez Lugo Portfolio</title>
-    <link rel="stylesheet" href="CSS/home.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Santiago Perez Lugo — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <div class="header-text">
-                <h1>Hi, I'm <span>Santiago Perez Lugo</span></h1>
-                <img src="images/santi-pic.png" alt="Santiago Perez Lugo" class="santi-pic">
-                <div class="subtitle">UVA Engineering Computer Science</div>
-            </div>
-            <div class="social-media">
-                <a href="https://github.com/santiagoperezlugo" class="github-class">
-                    <i class="fab fa-github"></i>
-                    <h2>GitHub</h2>
-                </a>
-                <!-- Changed to open Drive preview instead of downloading -->
-                <a href="https://drive.google.com/file/d/1PuHJ-kHTsmtnaNsKWTMOB-1R75tYjE_D/view?usp=sharing" target="_blank" class="contact-class">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h2>Transcript</h2>
-                </a>
-                <a href="https://www.linkedin.com/in/santiago-perezlugo" class="linkedin-class">
-                    <i class="fab fa-linkedin"></i>
-                    <h2>LinkedIn</h2>
-                </a>
-                <a href="about.html" class="about-class">
-                    <i class="fa fa-address-card"></i>
-                    <h2>About</h2>
-                </a>
-                <a href="https://drive.google.com/file/d/1DLk1MO0wwj78LzkDJGx8I8l-HybWvrRU/view?usp=sharing" target="_blank" class="resume-class">
-                    <i class="fa fa-file"></i>
-                    <h2>Resume</h2>
-                </a>
-                <a href="projects.html" class="projects-class">
-                    <i class="fas fa-sitemap"></i>
-                    <h2>Projects</h2>
-                </a>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="#home" aria-label="Home"></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#footer">Links</a>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <main class="wrap">
+        <section id="home" class="hero">
+            <img class="avatar" src="images/santi-pic.png" alt="Santiago Perez Lugo">
+            <h1 class="name">Hi, I'm <span>Santiago Perez Lugo</span></h1>
+            <p class="role">UVA — B.S. Computer Science • Minor in Business</p>
+            <div class="cta">
+                <a class="cta-outline" href="https://github.com/santiagoperezlugo" target="_blank" rel="noopener">GitHub</a>
+                <a class="cta-outline" href="https://www.linkedin.com/in/santiago-perezlugo" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </section>
+
+        <section id="about" class="card center">
+            <h2>About</h2>
+            <p>I'm an Engineering student at the University of Virginia studying Computer Science with a minor in Business. I enjoy research, personal projects, and solving technical challenges. Outside of coding I play soccer, basketball, and follow analytics-driven projects.</p>
+            <div class="stats">
+                <div><strong>GPA</strong><span>3.8</span></div>
+                <div><strong>Major GPA</strong><span>3.94</span></div>
+                <div><strong>Class</strong><span>UVA ’26</span></div>
+            </div>
+        </section>
+
+        <section id="projects" class="card center">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="proj">
+                    <img src="images/in-progress.png" alt="ArcadeAI"/>
+                    <div class="proj-content">
+                        <h3>Vista</h3>
+                        <p>Vista uses a machine learning model to learn from your viewing preferences and watch history, suggesting personalized TV shows you'll love, from over 30,000 titles.</p>
+                        <div class="math">PyTorch, MongoDB, React, Flask</div>
+                        <a href="https://github.com/santiagoperezlugo/ArcadeAI?tab=readme-ov-file" target="_blank" rel="noopener">Learn more</a>
+                    </div>
+                </article>
+
+                <article class="proj">
+                    <img src="images/Ti-Hoops.png" alt="Ti's Hoops"/>
+                    <div class="proj-content">
+                        <h3>Ti's Hoops</h3>
+                        <p>Predictive analytics model trained on historical NBA data to simulate outcomes.</p>
+                        <div class="math">PyTorch, MySQL, Node.js, Express, Amazon RDS</div>
+                        <a href="https://github.com/santiagoperezlugo/Ti-Hoops" target="_blank" rel="noopener">Learn more</a>
+                    </div>
+                </article>
+
+                <article class="proj">
+                    <img src="images/laic.png" alt="BracketBuddy"/>
+                    <div class="proj-content">
+                        <h3>Latin American Coalitions</h3>
+                        <p> A centralized site serving 2,200+ Latinx/Hispanic students at UVA, consolidating events, resources,
+scholarships, and support organizations.</p>
+                        <div class="math">React, Typescript</div>
+                        <a href="https://github.com/santiagoperezlugo/BracketBuddy" target="_blank" rel="noopener">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card center">
+            <h2>Contact</h2>
+            <p>Reach out — open to internships, research, and collaboration.</p>
+            <div class="social-row">
+                <a class="icon" href="mailto:perezlugosantiago@gmail.com"><i class="far fa-paper-plane"></i><span>Email</span></a>
+                <a class="icon" href="https://github.com/santiagoperezlugo" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
+                <a class="icon" href="https://www.linkedin.com/in/santiago-perezlugo" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a class="icon" href="https://drive.google.com/file/d/1DLk1MO0wwj78LzkDJGx8I8l-HybWvrRU/view?usp=sharing" target="_blank" rel="noopener"><i class="fa fa-file"></i><span>Resume</span></a>
+                <a class="icon" href="https://drive.google.com/file/d/1PuHJ-kHTsmtnaNsKWTMOB-1R75tYjE_D/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i><span>Transcript</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="Documents/Santiago_Perez_Lugo_Resume.pdf" download>Download Resume (PDF)</a>
+                <a href="Documents/Santiago Perez Lugo Transcript.pdf" download>Download Transcript (PDF)</a>
+            </div>
+            <div class="social-row small">
+                <a href="https://github.com/santiagoperezlugo" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/santiago-perezlugo" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:perezlugosantiago@gmail.com"><i class="far fa-paper-plane"></i></a>
+            </div>
+            <div class="copyright">© Santiago Perez Lugo — <span id="year"></span></div>
+        </div>
+    </footer>
+
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+        // smooth scroll for older browsers
+        document.documentElement.style.scrollBehavior = 'smooth';
+    </script>
 </body>
 </html>

@@ -29,28 +29,31 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
+    gap: 24px;
 }
 
 .text-group {
     text-align: center;
 }
 .centered-text p {
-    margin: 5px 0; /* Adds a small margin between each line */
+    margin: 5px 0;
 }
 
 header img.profile-pic {
-    width: 25%; 
-    height: auto;
-    border-radius: 50px; /* Adjusted radius to maintain circular shape */
+    width: 260px; 
+    height: 260px;
+    object-fit: cover;
+    border-radius: 999px;
+    flex-shrink: 0;
 }
 
 main {
     margin-top: 5vh;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +87,7 @@ main {
 section {
     background: white;
     margin-bottom: 20px;
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     flex: 1;
@@ -103,7 +106,7 @@ ul {
 ul li {
     background: #eee;
     margin: 5px 0;
-    padding: 8px; /* Smaller padding for list items */
+    padding: 8px;
     border-radius: 5px;
 }
 
@@ -180,7 +183,7 @@ a {
 
 header:hover, .contact:hover, .skills:hover, .about:hover {
     box-shadow:
-     0 4px 20px rgba(101, 50, 255, 0.895); /* Glow effect on hover */
+     0 4px 20px rgba(101, 50, 255, 0.895);
 }
 
 
@@ -195,8 +198,8 @@ header:hover, .contact:hover, .skills:hover, .about:hover {
 
 .home a {
     text-decoration: none;
-    position: relative; /* Needed to position the pseudo-element */
-    display: inline-block; /* Ensures the flex properties affect it */
+    position: relative;
+    display: inline-block;
 }
 
 .home a::before {
@@ -206,12 +209,12 @@ header:hover, .contact:hover, .skills:hover, .about:hover {
     background: rgba(101, 50, 255, 0.5);
     z-index: -1;
     transition: all 0.3s ease;
-    opacity: 0; /* Hide initially */
+    opacity: 0;
 }
 
 .home a:hover::before {
     transform: scale(1.1);
-    opacity: 1; /* Show on hover */
+    opacity: 1;
 }
 
 .home h1, .home h2 {
@@ -219,12 +222,12 @@ header:hover, .contact:hover, .skills:hover, .about:hover {
 }
 
 .home a:hover h1, .home a:hover h2 {
-    transform: scale(1.1); /* Scale up on hover */
-    text-shadow: 0 4px 20px rgba(101, 50, 255, 0.895); /* Glow effect on hover */
+    transform: scale(1.1);
+    text-shadow: 0 4px 20px rgba(101, 50, 255, 0.895);
 }
 
 .home h2 {
-    font-size: 80%; /* Smaller font size for the 'Home' text */
+    font-size: 80%;
 }
 
 
@@ -260,13 +263,14 @@ header:hover, .contact:hover, .skills:hover, .about:hover {
     }
 
     header img.profile-pic {
-        width: 50%;
+        width: 220px;
+        height: 220px;
     }
 }
 
 @media (max-width: 480px) {
     .text-group h1, .centered-text p {
-        font-size: smaller; /* Adjust font size */
+        font-size: smaller;
     }
 
     .flex-container {
@@ -274,6 +278,6 @@ header:hover, .contact:hover, .skills:hover, .about:hover {
     }
 
     ul li {
-        padding: 6px; /* Smaller padding for smaller screens */
+        padding: 6px;
     }
 }

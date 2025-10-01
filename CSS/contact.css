@@ -37,17 +37,17 @@ body {
     list-style: none;
     align-items: center;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 6%;
+    gap: 18px;
 }
 
 
 .discord-container button{
     text-align: center;
-    padding: 5px; 
+    padding: 8px; 
     border: none;
     background: none;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 8px;
     cursor: pointer;
 }
 
@@ -59,12 +59,16 @@ body {
 .discord-copy h2 {
     position: relative; 
     color: black;
+    margin-top: 6px;
 }
 
 .linkedin-container a {
     text-decoration: none;
     color: #0077B5;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .linkedin-container a h2 {
@@ -75,7 +79,9 @@ body {
     text-decoration: none;
     color: #cc0000;
     text-align: center; 
-    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .email-container a h2 {
@@ -92,5 +98,5 @@ body {
     width: 100%; 
 }
 .hover-border-effect:hover {
-    transform: scale(1.5);
+    transform: scale(1.05);
 }
